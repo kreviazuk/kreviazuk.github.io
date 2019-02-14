@@ -27,10 +27,9 @@
     <input type="text" id="search">
     <script>
         $("input").focus(function () {
-            var _this = this;
             setTimeout(() => {
-                _this.scrollIntoView(true);
-                _this.scrollIntoViewIfNeeded();
+                $("input").scrollIntoView(true);
+                $("input").scrollIntoViewIfNeeded();
             }, 300)
         });
         // function fn() {
