@@ -26,10 +26,11 @@
     </ul>
     <input type="text" id="search">
     <script>
-        var search = document.getElementById('search');
         $("input").focus(function () {
+            var _this = this;
             setTimeout(() => {
-                document.body.scrollTop = document.body.scrollHeight
+                _this.scrollIntoView(true);
+                _this.scrollIntoViewIfNeeded();
             }, 300)
         });
         // function fn() {
